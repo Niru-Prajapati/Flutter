@@ -35,6 +35,10 @@ class _HomePageState extends State<HomePage> {
           }, child: Text('Identity Card')),
           ElevatedButton(onPressed:(){}, child: Text('Second Mob')),
           ElevatedButton(onPressed:(){}, child: Text('Mobile App')),
+          ElevatedButton(onPressed: () {
+            Navigator.pushNamed(context,
+                AppRoute.signup);
+          }, child: Text('Signup')),
         ],
       ),
     );
