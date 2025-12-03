@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:youtube/app_text_styles.dart';
+import 'package:youtube/constants/app_text_styles.dart';
 
-import 'app_routes.dart';
+import '../../constants/app_routes.dart';
+import '../home/bottom_navigation.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -147,8 +148,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   onPressed: () {
                     if(formKey.currentState!.validate()){
-                      print('Email: ${emailController.text}');
-                      print('Password: ${passwordController.text}');
+                      Navigator.pushAndRemoveUntil(context,
+                      MaterialPageRoute(
+                          builder: (context)=>BottomNavigation(),
+                      ),
+                    (route)=>false,
+                    );
 
                     }
                   },

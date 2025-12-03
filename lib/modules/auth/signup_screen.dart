@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:youtube/app_text_styles.dart';
+import 'package:youtube/constants/app_text_styles.dart';
 
-import 'app_routes.dart';
+import '../../constants/app_routes.dart';
+
+//import 'constants/app_routes.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});

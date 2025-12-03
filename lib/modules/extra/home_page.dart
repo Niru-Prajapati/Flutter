@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'app_routes.dart';
-import 'identity_card.dart';
+import '../../constants/app_routes.dart';
+//import '../../identity_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
