@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'dashboard_view.dart';
+import 'order_screen.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
@@ -14,7 +15,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   int indexs=0;
   final screens=[
     DashboardView(),
-    DashboardView(),
+    OrderScreen(),
     DashboardView(),
   ];
   @override
